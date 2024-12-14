@@ -8,4 +8,30 @@ Predictive analytics
 Uses historical data to identify patterns and generate forecasts about what is likely to happen in the future. It uses advanced modeling techniques to enable proactive decision-making.
 
 Prescriptive analytics
-Combines forecasts with mathematical optimization, operations research, and decision sciences to identify the best course of action. It recommends actions that can be taken to affect outcomes. 
+Combines forecasts with mathematical optimization, operations research, and decision sciences to identify the best course of action. 
+It recommends actions that can be taken to affect outcomes. 
+
+Data modelling techniques:
+Star schema is one of three schemas used in data warehouses to properly organize your data. The other two are snowflake schema and galaxy schema. 
+While there are differences between the three, they all share a similarity in that they all promote fast and efficient querying of large data sets.
+
+A star schema model always has only one central "fact table" which is surrounded by multiple dimension tables; this is a defining characteristic of the star schema design. 
+Key points about the star schema:
+
+    Single fact table:
+    The core of a star schema is a single fact table that holds the primary data points or metrics.
+    Dimension tables:
+    Multiple dimension tables are connected to the fact table, providing descriptive context about the data in the fact table.
+
+
+Star schemas have several disadvantages, including:
+
+Data redundancy: Star schemas use data denormalization, which can lead to multiple copies of the same data. This redundancy requires more storage space and increases costs. 
+Data quality: Star schemas don't enforce data integrity, which can impact data quality. 
+Maintenance: Denormalized dimension tables can be difficult to maintain because updates may require changes in multiple places. 
+Complex queries: Star schemas can make it harder to run more complex queries. 
+Limited flexibility: Star schemas are less robust than normalized structures and may not be able to capture complex relationships between dimensions. 
+Data loading time: Star schemas may have increased data loading time due to additional columns for foreign keys. 
+Query performance: Multiple joins between tables can result in slower query performance
+
+
